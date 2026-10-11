@@ -651,4 +651,10 @@ footer p {
     border-color: #8f79a7;
     opacity: 0.4;
 }
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
 
