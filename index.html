@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Ashi Malhotra, MCA (Integrated) student and aspiring web developer skilled in HTML, CSS, Bootstrap, Python and SQL.">
 
-    <title>Ashi | Portfolio</title>
+    <title>Ashi Malhotra | Web Developer Portfolio</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,27 +17,37 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-
         <div class="container">
 
-            <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48px"
-                    viewBox="0 -960 960 960" width="48px" fill="#1f1f1f">
+            <a class="navbar-brand" href="#home" aria-label="Back to top">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                    fill="#1f1f1f">
                     <path
                         d="M0-360v-240h48v89h108v-89h48v240h-48v-103H48v103H0Zm316 0v-192h-70v-48h188v48h-70v192h-48Zm160 0v-206q0-15 9.5-24.5T510-600h200q15 0 24.5 9.5T744-566v206h-48v-192h-62v150h-48v-150h-62v192h-48Zm326 0v-240h48v192h110v48H802Z" />
-                </svg></a>
+                </svg>
+            </a>
 
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="#home">Home</a>
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#skills">Skills</a>
-                <a class="nav-link" href="#projects">Projects</a>
-                <a class="nav-link" href="#contact">Contact</a>
-                <a class="nav-link" href="#education">Education</a>
+            <!-- Menu button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#education">Education</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
             </div>
 
         </div>
-
     </nav>
+
+    <!-- Home Section -->
     <section id="home" class="py-5">
         <div class="container">
             <div class="row align-items-center min-vh-75">
@@ -44,98 +55,78 @@
                 <!-- Left Side -->
                 <div class="col-md-7">
 
-                    <p class="text-primary fw-bold">HELLO, I'M</p>
+                    <p class="text-primary fw-bold">ASPIRING WEB DEVELOPER</p>
 
-
-                    <h1>Hello, I'm <br>
+                    <h1>Hi, I'm <br>
                         <span class="gradient-text">Ashi Malhotra</span>
                     </h1>
 
-                    <h2 class="text-secondary">
-                        MCA Integrated Student
-                    </h2>
+                    <h2 class="text-secondary">MCA Integrated Student</h2>
 
                     <p class="lead mt-3">
-                        I am a passionate student interested in Web Development,
-                        Python and SQL. I am currently building my skills and
-                        projects to become internship-ready.
+                        I build simple, responsive websites with HTML, CSS and Bootstrap,
+                        and Python projects with SQL. I'm looking for an internship
+                        where I can learn from a team and contribute.
                     </p>
 
-                    <a href="https://github.com/ashimalhotra1611" target="_blank" rel="noopener noreferrer">
-                        GitHub
-                    </a>
-
-                    <a href="#contact" class="btn btn-outline-primary">
-                        Contact Me
-                    </a>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <!-- Upload your resume PDF to the same folder with this exact name -->
+                        <a href="Ashi-Malhotra-Resume.pdf" class="btn btn-outline-primary" download>Download Resume</a>
+                        <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
+                    </div>
 
                 </div>
 
                 <!-- Right Side -->
-
-
                 <div class="col-md-5 text-center">
                     <div class="profile-card">
-
-
-<img src="ashi.png" alt="Ashi" class="profile-img">
+                        <img src="ashi.png" alt="Portrait of Ashi Malhotra" class="profile-img">
                         <h5 class="mt-3">MCA Integrated Student</h5>
                         <p class="mb-0">Learning • Building • Growing</p>
-
                     </div>
                 </div>
-    </section>
-    <section id="about" class="py-5 bg-light">
 
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
         <div class="container">
 
             <div class="text-center mb-5">
                 <h2 class="fw-bold">About Me</h2>
-                <p class="text-secondary">
-                    Get to know me
-                </p>
+                <p class="text-secondary">A little more about what I do</p>
             </div>
 
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
 
-            <div class="col-md-5 text-center">
+                    <p class="text-secondary">
+                        I'm pursuing an MCA (Integrated) at Raja Balwant Technical Campus, Agra.
+                        I enjoy turning what I learn in class into small, working projects.
+                    </p>
 
-            </div>
-
-            <div class="col-md-7">
-
-                <h3 class="fw-bold">Hello! I'm Ashi.</h3>
-
-                <p class="text-secondary">
-                    I am an MCA Integrated student with an interest in
-                    Web Development, Python and SQL.
-                </p>
-
-                <p class="text-secondary">
-                    I enjoy learning new technologies and building small
-                    projects to improve my practical skills. Currently,
-                    I am focusing on becoming internship-ready.
-                </p>
-
-                <div class="row mt-4">
-
+                    <p class="text-secondary">
+                        So far I have built a Python student record system that won an
+                        academic project award, and this portfolio website. Next, I want to
+                        build web apps that combine Python, SQL and front-end skills.
+                    </p>
 
                 </div>
-
             </div>
 
         </div>
-
     </section>
-    <!-- Skills Section -->
 
+    <!-- Skills Section -->
     <section id="skills" class="py-5">
         <div class="container">
 
             <div class="text-center mb-5">
                 <h2 class="fw-bold">My <span class="gradient-text">Skills</span></h2>
-                <p class="text-secondary">
-                    Technologies I'm learning and working with
-                </p>
+                <p class="text-secondary">Technologies I use and where I've used them</p>
             </div>
 
             <div class="row g-4">
@@ -144,11 +135,11 @@
                     <div class="skill-card">
                         <div class="skill-icon python-bg">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                                alt="Python" width="42">
+                                alt="Python logo" width="42">
                         </div>
                         <h5>Python</h5>
-                        <p>Programming fundamentals</p>
-                        <span class="skill-tag">Learning & Practicing</span>
+                        <p>Programming, file handling and OOP basics</p>
+                        <span class="skill-tag">Used in Student Management System</span>
                     </div>
                 </div>
 
@@ -156,11 +147,11 @@
                     <div class="skill-card">
                         <div class="skill-icon sql-bg">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                                alt="SQL" width="42">
+                                alt="SQL logo" width="42">
                         </div>
                         <h5>SQL</h5>
-                        <p>Database queries and basics</p>
-                        <span class="skill-tag">Learning & Practicing</span>
+                        <p>Database queries and DBMS basics</p>
+                        <span class="skill-tag">Learning</span>
                     </div>
                 </div>
 
@@ -168,11 +159,11 @@
                     <div class="skill-card">
                         <div class="skill-icon html-bg">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                                alt="HTML" width="42">
+                                alt="HTML logo" width="42">
                         </div>
                         <h5>HTML</h5>
                         <p>Building webpage structure</p>
-                        <span class="skill-tag">Learning & Practicing</span>
+                        <span class="skill-tag">Used in this portfolio</span>
                     </div>
                 </div>
 
@@ -180,11 +171,11 @@
                     <div class="skill-card">
                         <div class="skill-icon css-bg">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                                alt="CSS" width="42">
+                                alt="CSS logo" width="42">
                         </div>
                         <h5>CSS</h5>
                         <p>Styling and page layouts</p>
-                        <span class="skill-tag">Learning & Practicing</span>
+                        <span class="skill-tag">Used in this portfolio</span>
                     </div>
                 </div>
 
@@ -192,11 +183,11 @@
                     <div class="skill-card">
                         <div class="skill-icon bootstrap-bg">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                                alt="Bootstrap" width="42">
+                                alt="Bootstrap logo" width="42">
                         </div>
                         <h5>Bootstrap</h5>
                         <p>Responsive web design</p>
-                        <span class="skill-tag">Currently Learning</span>
+                        <span class="skill-tag">Used in this portfolio</span>
                     </div>
                 </div>
 
@@ -204,29 +195,25 @@
                     <div class="skill-card">
                         <div class="skill-icon java-bg">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                                alt="Java" width="42">
+                                alt="Java logo" width="42">
                         </div>
                         <h5>Java</h5>
                         <p>Programming fundamentals</p>
-                        <span class="skill-tag">Learning & Practicing</span>
+                        <span class="skill-tag">Learning</span>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
-    <!-- Projects Section -->
 
+    <!-- Projects Section -->
     <section id="projects" class="py-5">
         <div class="container">
 
             <div class="text-center mb-5">
-                <h2 class="fw-bold">
-                    My <span class="gradient-text">Projects</span>
-                </h2>
-                <p class="text-secondary">
-                    Projects I've built while learning and growing
-                </p>
+                <h2 class="fw-bold">My <span class="gradient-text">Projects</span></h2>
+                <p class="text-secondary">Projects I've built while learning</p>
             </div>
 
             <div class="row g-4">
@@ -236,16 +223,15 @@
                     <div class="project-card">
                         <div class="project-icon portfolio-bg">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                                alt="HTML" width="42">
+                                alt="HTML logo" width="42">
                         </div>
 
                         <span class="project-label">Web Development</span>
                         <h4>Personal Portfolio Website</h4>
 
                         <p>
-                            A responsive personal portfolio built using
-                            HTML, CSS and Bootstrap to showcase my skills,
-                            education and projects.
+                            A responsive portfolio that shows my skills, education and
+                            projects, with a working contact form. Hosted on GitHub Pages.
                         </p>
 
                         <div class="project-tags">
@@ -254,10 +240,12 @@
                             <span>Bootstrap</span>
                         </div>
 
-                        <a href="https://github.com/ashimalhotra1611" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-outline-primary mt-4">
-                            GitHub Profile
-                        </a>
+                        <div class="d-flex flex-wrap gap-2 mt-4">
+                            <a href="https://ashimalhotra1611.github.io/ashi--portofolio-/" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
+                            <a href="https://github.com/ashimalhotra1611/ashi--portofolio-" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-outline-primary">View Code</a>
+                        </div>
                     </div>
                 </div>
 
@@ -266,16 +254,16 @@
                     <div class="project-card">
                         <div class="project-icon python-bg">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                                alt="Python" width="42">
+                                alt="Python logo" width="42">
                         </div>
 
                         <span class="project-label">Python Development</span>
                         <h4>Student Management System</h4>
 
                         <p>
-                            A beginner-friendly Python project to manage
-                            student records with features such as adding,
-                            viewing, searching and deleting records.
+                            A Python project to manage student records. You can add, view,
+                            search and delete students, and the data is saved in JSON files.
+                            Won an academic project award.
                         </p>
 
                         <div class="project-tags">
@@ -284,29 +272,23 @@
                             <span>File Handling</span>
                         </div>
 
-                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-outline-primary mt-4">
-                            GitHub Profile
-                        </a>
+                        <!-- TODO: replace this link with your repository link, e.g. https://github.com/ashimalhotra1611/student-management-system -->
+                        <a href="https://github.com/ashimalhotra1611?tab=repositories" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-outline-primary mt-4">View Code</a>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
+
     <!-- Education Section -->
-
     <section id="education" class="py-5 education-section">
-
         <div class="container">
 
             <div class="text-center mb-5">
-                <h2 class="fw-bold section-title">
-                    My <span>Education</span>
-                </h2>
-                <p class="text-secondary">
-                    My academic journey
-                </p>
+                <h2 class="fw-bold section-title">My <span>Education</span></h2>
+                <p class="text-secondary">My academic journey</p>
             </div>
 
             <div class="row justify-content-center">
@@ -314,29 +296,19 @@
 
                     <div class="education-card p-4 p-md-5">
 
-                        <div class="education-icon mb-3">
-                            🎓
-                        </div>
+                        <div class="education-icon mb-3" aria-hidden="true">🎓</div>
 
-                        <span class="education-status">
-                            Currently Pursuing
-                        </span>
+                        <span class="education-status">Currently Pursuing</span>
 
-                        <h3 class="fw-bold mt-3">
-                            MCA Integrated
-                        </h3>
+                        <h3 class="fw-bold mt-3">MCA (Integrated)</h3>
 
-                        <h5 class="mt-3">
-                            Raja Balwant Technical Campus, Agra
-                        </h5>
+                        <h5 class="mt-3">Raja Balwant Technical Campus, Agra</h5>
 
                         <p class="text-secondary mb-2">
                             Affiliated to Dr. A.P.J. Abdul Kalam Technical University (AKTU)
                         </p>
 
-                        <p class="mb-0">
-                            Expected completion: 2028
-                        </p>
+                        <p class="mb-0">2024 – Expected 2028</p>
 
                     </div>
 
@@ -346,113 +318,81 @@
         </div>
     </section>
 
-
-
     <!-- Contact Section -->
-    <div class="contact-card p-4 p-md-5">
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
 
-        <form action="https://formsubmit.co/ashimalhotra1611@gmail.com" method="POST">
-
-            <input type="hidden" name="_subject" value="New Portfolio Message">
-
-            <input type="hidden" name="_captcha" value="true">
-
-            <div class="mb-4">
-                <label class="form-label fw-semibold">
-                    Your Name
-                </label>
-                <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Get in <span class="gradient-text">Touch</span></h2>
+                <p class="text-secondary">
+                    Have an internship or project opportunity? Send me a message or email me at
+                    <a href="mailto:ashimalhotra1611@gmail.com">ashimalhotra1611@gmail.com</a>.
+                </p>
             </div>
 
-            <div class="mb-4">
-                <label class="form-label fw-semibold">
-                    Your Email
-                </label>
-                <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+
+                    <div class="contact-card p-4 p-md-5">
+
+                        <form action="https://formsubmit.co/ashimalhotra1611@gmail.com" method="POST">
+
+                            <input type="hidden" name="_subject" value="New Portfolio Message">
+                            <input type="hidden" name="_captcha" value="true">
+
+                            <div class="mb-4">
+                                <label for="name" class="form-label fw-semibold">Your Name</label>
+                                <input type="text" id="name" name="name" class="form-control"
+                                    placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="email" class="form-label fw-semibold">Your Email</label>
+                                <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="Enter your email" required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="message" class="form-label fw-semibold">Your Message</label>
+                                <textarea id="message" name="message" class="form-control" rows="5"
+                                    placeholder="Write your message..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary px-4 py-2">Send Message</button>
+
+                        </form>
+
+                    </div>
+
+                </div>
             </div>
-
-            <div class="mb-4">
-                <label class="form-label fw-semibold">
-                    Your Message
-                </label>
-                <textarea name="message" class="form-control" rows="5" placeholder="Write your message..."
-                    required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary px-4 py-2">
-                Send Message →
-            </button>
-
-        </form>
-
-    </div>
-
-<div class="hero-buttons">
-    <a href="https://github.com/ashimalhotra1611"
-       target="_blank"
-       rel="noopener noreferrer">
-        GitHub
-    </a>
-
-    <a href="#contact" class="btn btn-outline-primary">
-        Contact Me
-    </a>
-</div>
-
-    </div>
-
-    </div>
-    </div>
-
-    </div>
-    </section>
-
-    <!--footer-->
-    
-    <!-- Footer -->
-
-<footer class="portfolio-footer py-4">
-
-    <div class="container text-center">
-
-        <a href="#home" class="footer-brand">
-            Ashi<span>.</span>
-        </a>
-
-        <p class="mt-2 mb-3">
-            MCA Integrated Student | Aspiring Web Developer
-        </p>
-
-        <div class="footer-links mb-3">
-
-            <a href="https://github.com/ashimalhotra1611"
-                target="_blank" rel="noopener noreferrer">
-                GitHub
-            </a>
-
-            <a href="https://www.linkedin.com/in/ashi-malhotra-9989983b3/"
-                target="_blank" rel="noopener noreferrer">
-                LinkedIn
-            </a>
-
-            <a href="#contact">
-                Contact
-            </a>
 
         </div>
+    </section>
 
-        <hr>
+    <!-- Footer -->
+    <footer class="portfolio-footer py-4">
+        <div class="container text-center">
 
-        <p class="small mb-0">
-            © 2026 Ashi Malhotra | Made with care 💜
-        </p>
+            <a href="#home" class="footer-brand">Ashi<span>.</span></a>
 
-    </div>
+            <p class="mt-2 mb-3">MCA Integrated Student | Aspiring Web Developer</p>
 
-</footer>
+            <div class="footer-links mb-3">
+                <a href="https://github.com/ashimalhotra1611" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/ashi-malhotra-9989983b3/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:ashimalhotra1611@gmail.com">Email</a>
+            </div>
 
-<!-- Bootstrap JS -->
+            <hr>
 
+            <p class="small mb-0">© 2026 Ashi Malhotra</p>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
